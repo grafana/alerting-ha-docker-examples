@@ -16,7 +16,7 @@ docker compose up -d
 This command starts two Grafana instances, Prometheus, nginx, and PostgreSQL.
 
 ```bash
- ✔ Network memberlist_default                         Created          0.0s
+ ✔ Network redis_default                         Created          0.0s
  ✔ Container prometheus                               Started          0.0s
  ✔ Container redis                                    Started          0.0s
  ✔ Container postgres                                 Healthy          0.1s
