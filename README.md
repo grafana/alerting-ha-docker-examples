@@ -34,7 +34,7 @@ You can now verify that Alertmanager HA is working by querying the `alertmanager
 
 To learn more about the configuration of this Grafana stack, review the setup in the [docker-compose.yaml](./docker-compose.yaml) file:
 
-- Grafana Alerting enables HA using Memberlist by configuring ha_peers and ha_listen_address via environment variables.
+- Grafana Alerting enables HA using Memberlist by configuring `ha_peers` and `ha_listen_address` via environment variables.
 - PostgreSQL is configured to share data between the two Grafana instances.
 - nginx is used to forward incoming requests on port 8080 to the different Grafana instances.
 - The Prometheus instance scrapes metrics from the two Grafana instances to monitor the cluster status.
