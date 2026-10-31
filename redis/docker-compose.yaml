@@ -11,7 +11,7 @@ services:
       - "9090:9090"
   postgres:
     container_name: postgres
-    image: postgres:16.14@sha256:95206741a5b214807675e14165369d05b93a9cf692223b616d07cca227e74b0b
+    image: postgres:16.15@sha256:1beaa3084eee2676f20a9cd9928f0bf2c5bf674f8e49f81017912183d377c61c
     ports:
       - "5432:5432"
     volumes:
