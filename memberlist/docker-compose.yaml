@@ -1,7 +1,7 @@
 services:
   prometheus:
     container_name: prometheus
-    image: prom/prometheus:v2.54.0
+    image: prom/prometheus:v2.54.0@sha256:497fe921f22fea8535fa2bcb1c193dacc6ce98c08274257b3d18a4eaae0f9647
     command:
       - --web.enable-remote-write-receiver
       - --config.file=/etc/prometheus/prometheus.yml
@@ -70,7 +70,7 @@ services:
       - ./grafana/provisioning:/etc/grafana/provisioning
   nginx:
     container_name: nginx
-    image: nginx:latest
+    image: nginx:latest@sha256:84f7876d21d154885f99554d7ae325d8c2213f9169726ea7ab60642f2573a787
     ports:
       - "8080:80"
     volumes:
